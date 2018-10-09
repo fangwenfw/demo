@@ -1,0 +1,27 @@
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC4tWoiIpL3jd2O0H111uncvSEJH5v6PxDJ4WjvE/Wgco/dWiQQTDr4e3a11OJPjH78PDCPDtoLAulofqGk4njsAmjaH6ME4WBOJPRBKHYpGeQkE8PQ6ixNkhbz5c4Jcwtr11QSzRjFBmWCookPyCPG+vIlj33nfG/G1umc7TOoWzAQCKLbl7KxhLNatzoxVkr8CvWmdQLCTG/wEWxICgt4jLUu/cGlv9CuKrXecuw0wq3Qp1vDEUSegaGCEkZ3q6cGL7xpOhz53+GskndW+zlu0EQpWxP36VbcA91ZzhdfE+F15iabtbIQizsxezpruPBVYrKZ+QAtoKt6Bm1Cml25 Administrator@PC-20180805RNLS
+
+
+
+ÎÞÏßÃÜÂë£º
+cGlv9CuKrXecuw0wq3Qp1
+
+
+
+
+(function (doc, win) {
+        var docEl = doc.documentElement,
+            resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+            recalc = function () {
+                var clientWidth = docEl.clientWidth;
+                if (!clientWidth) return;
+                if(clientWidth>=640){
+                    docEl.style.fontSize = '100px';
+                }else{
+                    docEl.style.fontSize = 100 * (clientWidth / 640) + 'px';
+                }
+            };
+ 
+        if (!doc.addEventListener) return;
+        win.addEventListener(resizeEvt, recalc, false);
+        doc.addEventListener('DOMContentLoaded', recalc, false);
+    })(document, window);
